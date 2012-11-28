@@ -1,4 +1,10 @@
 Joaofernandes::Application.routes.draw do
+  get "home/index"
+
+  root :to => "favoritos#index"
+  resources :favoritos
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
